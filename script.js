@@ -1,1 +1,1 @@
-console.log("Inlaya Store running...");
+console.log("Store loaded");

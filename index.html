@@ -1,55 +1,169 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inlaya Store</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilyan Sarah - Fashion Store</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header>
-  <h1>🛍 Inlaya Store</h1>
-  <p>Choisis ton style et commande directement</p>
-</header>
-
-<section class="grid">
-
-  <!-- Product 1 -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1520975916090-3105956dac38" />
-    <h3>T-shirt Blanc</h3>
-    <p>Prix: 120 MAD</p>
-    <a href="https://wa.me/212762730446?text=Bonjour, je veux commander T-shirt Blanc" target="_blank">
-      Commander
-    </a>
+  <!-- Top bar -->
+  <div class="topbar">
+    <p>Free delivery on orders over 150€</p>
   </div>
 
-  <!-- Product 2 -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1520975958221-9b9f2d5c7c66" />
-    <h3>Hoodie Noir</h3>
-    <p>Prix: 250 MAD</p>
-    <a href="https://wa.me/212762730446?text=Bonjour, je veux commander Hoodie Noir" target="_blank">
-      Commander
+  <!-- Header -->
+  <header class="header">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+      <span>ilyan.sarah</span>
     </a>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <a href="#">♡</a>
+      <a href="#">🛒</a>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
 
-  <!-- Product 3 -->
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1520975869018-5b6c1c6f0a1a" />
-    <h3>Pantalon Jean</h3>
-    <p>Prix: 180 MAD</p>
-    <a href="https://wa.me/212762730446?text=Bonjour, je veux commander Pantalon Jean" target="_blank">
-      Commander
-    </a>
-  </div>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">NEW COLLECTION</span>
+      <h1>Assert your style, reveal your personality.</h1>
+      <p>
+        Discover elegant pieces designed for modern women. Simple, classy, and ready for every season.
+      </p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-dark">Shop now</a>
+        <a href="#collections" class="btn btn-light">View collection</a>
+      </div>
+    </div>
+  </section>
 
-</section>
+  <!-- Featured image like the first picture -->
+  <section class="featured">
+    <div class="featured-card">
+      <img src="images/hero.jpg" alt="Featured fashion look">
+      <div class="featured-text">
+        <h2>Best Seller Look</h2>
+        <p>Elegant outfit for your homepage hero section.</p>
+      </div>
+    </div>
+  </section>
 
-<footer>
-  <p>© 2026 Inlaya Store - WhatsApp Command Only</p>
-</footer>
+  <!-- Collections -->
+  <section class="section" id="collections">
+    <div class="section-head">
+      <h2>Featured Collections</h2>
+      <a href="shop.html">View all</a>
+    </div>
 
+    <div class="grid-3">
+      <article class="card">
+        <img src="images/product-1.jpg" alt="Collection 1">
+        <h3>Binta Set</h3>
+        <p>€99.99</p>
+      </article>
+
+      <article class="card">
+        <img src="images/product-2.jpg" alt="Collection 2">
+        <h3>Sports Outfit</h3>
+        <p>€99.99</p>
+      </article>
+
+      <article class="card">
+        <img src="images/product-3.jpg" alt="Collection 3">
+        <h3>Sports Set</h3>
+        <p>€99.99</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section soft">
+    <div class="section-head">
+      <h2>What customers say</h2>
+    </div>
+
+    <div class="grid-2">
+      <blockquote class="testimonial">
+        “The quality is top-notch and the delivery was fast. I love the style.”
+        <span>— Sarah Ben Slima</span>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        “Beautiful pieces, affordable prices, and the customer service is great.”
+        <span>— Emilie</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="about-box">
+      <h2>About the brand</h2>
+      <p>
+        For several years, I have carefully selected pieces that combine trendiness and character,
+        allowing each woman to express her personality with class.
+      </p>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" id="contact">
+    <h2>Newsletter</h2>
+    <p>Join our list for new arrivals, special offers, and fashion updates.</p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Email address" />
+      <button type="submit">→</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>Information</h3>
+      <a href="#">General terms</a>
+      <a href="#">Return & Shipping</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div>
+      <h3>Customer area</h3>
+      <a href="#">My account</a>
+      <a href="#">My orders</a>
+      <a href="#">My addresses</a>
+    </div>
+
+    <div>
+      <h3>More</h3>
+      <p>Here you can add new pages later: blog, sizes, FAQ, or promotions.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

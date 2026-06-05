@@ -1,281 +1,169 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>INLAYA PARIS</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ilyan Sarah - Fashion Store</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- HEADER -->
-
-<header>
-
-<div class="menu-btn">
-<i class="fas fa-bars"></i>
-</div>
-
-<div class="logo">
-INLAYA PARIS
-</div>
-
-<div class="header-icons">
-
-<a href="#">
-<i class="fas fa-user"></i>
-</a>
-
-<a href="#">
-<i class="fas fa-search"></i>
-</a>
-
-<a href="#">
-<i class="fas fa-shopping-bag"></i>
-</a>
-
-</div>
-
-</header>
-
-<!-- HERO -->
-
-<section class="hero">
-
-<div class="hero-slide active">
-<img src="images/hero1.jpg" alt="">
-</div>
-
-<div class="hero-slide">
-<img src="images/hero2.jpg" alt="">
-</div>
-
-<div class="promo">
--70% SUR VOTRE COMMANDE
-</div>
-
-</section>
-
-<!-- ABOUT -->
-
-<section class="about">
-
-<h1>
-Affirme ton style, révèle ta personnalité.
-</h1>
-
-<p>
-Depuis plusieurs années, nous sélectionnons avec soin des pièces
-qui allient tendance et caractère.
-Notre ambition est de proposer des vêtements élégants
-et modernes pour toutes les femmes.
-</p>
-
-<a href="#" class="btn">
-TOUTE LA COLLECTION
-</a>
-
-</section>
-
-<!-- PRODUCTS -->
-
-<section class="products">
-
-<div class="product">
-
-<img src="images/product1.jpg" alt="">
-
-<h3>JEAN BALLON BLEU</h3>
-
-<p>99.99€</p>
-
-</div>
-
-<div class="product">
-
-<img src="images/product2.jpg" alt="">
-
-<h3>BLAZER LIAM</h3>
-
-<p>99.99€</p>
-
-</div>
-
-<div class="product">
-
-<img src="images/product3.jpg" alt="">
-
-<h3>BRACELET AJUSTABLE</h3>
-
-<p>39.99€</p>
-
-</div>
-
-</section>
-
-<div class="center-btn">
-
-<a href="#" class="btn">
-BOUTIQUE TOUTE LA GAMME
-</a>
-
-</div>
-
-<!-- IMAGE SECTION -->
-
-<section class="large-image">
-
-<img src="images/about.jpg" alt="">
-
-</section>
-
-<!-- TESTIMONIALS -->
-
-<section class="reviews">
-
-<div class="review">
-
-<p>
-Service impeccable, livraison rapide
-et excellente qualité.
-Je recommande vivement.
-</p>
-
-<h4>Sarah Ben Slima</h4>
-
-</div>
-
-<div class="review">
-
-<p>
-Très satisfaite de ma commande.
-Les vêtements sont magnifiques.
-</p>
-
-<h4>Emilie</h4>
-
-</div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact">
-
-<h2>Nous contacter</h2>
-
-<p>
-Une question ? Contactez notre équipe.
-</p>
-
-<form>
-
-<input type="text" placeholder="Nom">
-
-<input type="email" placeholder="Email">
-
-<textarea placeholder="Message"></textarea>
-
-<button type="submit">
-ENVOYER
-</button>
-
-</form>
-
-</section>
-
-<!-- NEWSLETTER -->
-
-<section class="newsletter">
-
-<h2>Newsletter</h2>
-
-<p>
-Recevez nos offres et nouveautés.
-</p>
-
-<form>
-
-<input type="email"
-placeholder="Adresse email">
-
-<button>
-→
-</button>
-
-</form>
-
-</section>
-
-<!-- FOOTER -->
-
-<footer>
-
-<div class="footer-box">
-
-<h3>Informations</h3>
-
-<a href="#">Conditions générales</a>
-
-<a href="#">Mentions légales</a>
-
-<a href="#">Politique de retour</a>
-
-<a href="#">Politique de confidentialité</a>
-
-</div>
-
-<div class="footer-box">
-
-<h3>Espace client</h3>
-
-<a href="#">Mes commandes</a>
-
-<a href="#">Mes adresses</a>
-
-</div>
-
-<div class="footer-box">
-
-<h3>Contact</h3>
-
-<p>Inlayaparis@yahoo.com</p>
-
-<p>+212762730446</p>
-
-</div>
-
-</footer>
-
-<!-- SOCIAL -->
-
-<section class="socials">
-
-<a href="https://www.instagram.com/inlaya_paris?igsh=MWNzd2pnZnVuemdpNg==" target="_blank">
-<i class="fab fa-instagram"></i>
-</a>
-
-<a href="https://www.snapchat.com/add/inlayaparis" target="_blank">
-<i class="fab fa-snapchat"></i>
-</a>
-
-<a href="mailto:Inlayaparis@yahoo.com">
-<i class="fas fa-envelope"></i>
-</a>
-
-<a href="https://wa.me/212762730446" target="_blank">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-</section>
-
-<script src="script.js"></script>
-
+  <!-- Top bar -->
+  <div class="topbar">
+    <p>Free delivery on orders over 150€</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Logo" onerror="this.style.display='none'">
+      <span>ilyan.sarah</span>
+    </a>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="icons">
+      <a href="#">♡</a>
+      <a href="#">🛒</a>
+    </div>
+  </header>
+
+  <!-- Mobile overlay menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="badge">NEW COLLECTION</span>
+      <h1>Assert your style, reveal your personality.</h1>
+      <p>
+        Discover elegant pieces designed for modern women. Simple, classy, and ready for every season.
+      </p>
+      <div class="hero-actions">
+        <a href="shop.html" class="btn btn-dark">Shop now</a>
+        <a href="#collections" class="btn btn-light">View collection</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured image like the first picture -->
+  <section class="featured">
+    <div class="featured-card">
+      <img src="images/hero.jpg" alt="Featured fashion look">
+      <div class="featured-text">
+        <h2>Best Seller Look</h2>
+        <p>Elegant outfit for your homepage hero section.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="section" id="collections">
+    <div class="section-head">
+      <h2>Featured Collections</h2>
+      <a href="shop.html">View all</a>
+    </div>
+
+    <div class="grid-3">
+      <article class="card">
+        <img src="images/product-1.jpg" alt="Collection 1">
+        <h3>Binta Set</h3>
+        <p>€99.99</p>
+      </article>
+
+      <article class="card">
+        <img src="images/product-2.jpg" alt="Collection 2">
+        <h3>Sports Outfit</h3>
+        <p>€99.99</p>
+      </article>
+
+      <article class="card">
+        <img src="images/product-3.jpg" alt="Collection 3">
+        <h3>Sports Set</h3>
+        <p>€99.99</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section soft">
+    <div class="section-head">
+      <h2>What customers say</h2>
+    </div>
+
+    <div class="grid-2">
+      <blockquote class="testimonial">
+        “The quality is top-notch and the delivery was fast. I love the style.”
+        <span>— Sarah Ben Slima</span>
+      </blockquote>
+
+      <blockquote class="testimonial">
+        “Beautiful pieces, affordable prices, and the customer service is great.”
+        <span>— Emilie</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <div class="about-box">
+      <h2>About the brand</h2>
+      <p>
+        For several years, I have carefully selected pieces that combine trendiness and character,
+        allowing each woman to express her personality with class.
+      </p>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter" id="contact">
+    <h2>Newsletter</h2>
+    <p>Join our list for new arrivals, special offers, and fashion updates.</p>
+
+    <form class="newsletter-form">
+      <input type="email" placeholder="Email address" />
+      <button type="submit">→</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>Information</h3>
+      <a href="#">General terms</a>
+      <a href="#">Return & Shipping</a>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <div>
+      <h3>Customer area</h3>
+      <a href="#">My account</a>
+      <a href="#">My orders</a>
+      <a href="#">My addresses</a>
+    </div>
+
+    <div>
+      <h3>More</h3>
+      <p>Here you can add new pages later: blog, sizes, FAQ, or promotions.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

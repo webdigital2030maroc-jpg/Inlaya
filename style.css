@@ -549,3 +549,19 @@ img {
     text-decoration:none;
     z-index:9999;
 }
+.social-icons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.social-icons img{
+    width:28px;
+    height:28px;
+    object-fit:contain;
+    transition:0.3s;
+}
+
+.social-icons img:hover{
+    transform:scale(1.15);
+}

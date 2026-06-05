@@ -1,5 +1,5 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cairo', sans-serif;
   margin: 0;
   background-color: #f8f4ef;
   color: #3a3a3a;
@@ -17,17 +17,16 @@ body {
 h1 {
   font-size: 2.5em;
   color: #bfa14a;
-  letter-spacing: 2px;
+}
+
+.promo {
+  color: #bfa14a;
+  font-weight: bold;
 }
 
 .main-content {
   text-align: center;
   padding: 20px;
-}
-
-.intro h2 {
-  font-size: 1.8em;
-  color: #bfa14a;
 }
 
 .gallery {
@@ -43,6 +42,11 @@ h1 {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.product {
+  display: inline-block;
+  margin: 20px;
+}
+
 .footer {
   background-color: #bfa14a;
   color: white;
@@ -55,8 +59,4 @@ h1 {
   margin: 0 10px;
   text-decoration: none;
   font-weight: bold;
-}
-
-.social-links a:hover {
-  text-decoration: underline;
 }

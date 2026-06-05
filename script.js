@@ -1,3 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  console.log("Bienvenue sur INLAYA PARIS !");
-});
+function toggleMenu() {
+  const sidebar = document.getElementById("sidebar");
+  sidebar.classList.toggle("active");
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,13 +8,25 @@
 
 <link rel="stylesheet" href="style.css">
 
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
+
+<!-- HEADER BRAND (NEW ADDED) -->
+<header class="header">
+  <div class="brand">
+    <img src="images/inlaya-paris.png" alt="Logo INLAYA PARIS" class="brand-logo">
+    <h1 class="brand-title">INLAYA PARIS</h1>
+  </div>
+</header>
 
 <!-- TOP BAR -->
 
 <div class="topbar">
-    <p>Free delivery on orders over 150€</p>
+    <p>Livraison gratuite pour toute commande supérieure à 150€</p>
 </div>
 
 <!-- HEADER -->
@@ -32,11 +44,11 @@
     <nav class="nav">
 
         <a href="index.html" class="active">
-            Home
+            Accueil
         </a>
 
         <a href="shop.html">
-            Shop
+            Boutique
         </a>
 
         <a href="#collections">
@@ -44,7 +56,7 @@
         </a>
 
         <a href="#about">
-            About
+            À propos
         </a>
 
         <a href="#contact">
@@ -54,7 +66,7 @@
     </nav>
 
     <div class="cart-btn" onclick="openCart()">
-🛒 Cart
+🛒 Panier
 </div>
 
 </header>
@@ -63,13 +75,13 @@
 
 <div class="mobile-menu" id="mobileMenu">
 
-    <a href="index.html">Home</a>
+    <a href="index.html">Accueil</a>
 
-    <a href="shop.html">Shop</a>
+    <a href="shop.html">Boutique</a>
 
     <a href="#collections">Collections</a>
 
-    <a href="#about">About</a>
+    <a href="#about">À propos</a>
 
     <a href="#contact">Contact</a>
 
@@ -84,26 +96,25 @@
     <div class="hero-content">
 
         <span class="badge">
-            NEW COLLECTION
+            NOUVELLE COLLECTION
         </span>
 
         <h1>
-            Assert your style, reveal your personality.
+            Affirmez votre style, révélez votre personnalité.
         </h1>
 
         <p>
-            Discover elegant pieces designed for modern women.
-            Simple, classy and ready for every season.
+            Découvrez des pièces élégantes conçues pour la femme moderne. Simples, chics et adaptées à toutes les saisons.
         </p>
 
         <div class="hero-actions">
 
             <a href="shop.html" class="btn btn-dark">
-                Shop now
+                Acheter maintenant
             </a>
 
             <a href="#collections" class="btn btn-light">
-                View collection
+                Voir la collection
             </a>
 
         </div>
@@ -123,11 +134,11 @@
         <div class="featured-text">
 
             <h2>
-                Best Seller Look
+                Look Bestseller
             </h2>
 
             <p>
-                Elegant outfit for your everyday style.
+                Tenue élégante pour votre style quotidien.
             </p>
 
         </div>
@@ -143,11 +154,11 @@
     <div class="section-head">
 
         <h2>
-            Featured Collections
+            Collections en vedette
         </h2>
 
         <a href="shop.html">
-            View all
+            Voir tout
         </a>
 
     </div>
@@ -156,19 +167,12 @@
 
         <article class="card">
 
-            <img src="images/product1.jpg" alt=""><img 
+            <img src="images/product1.jpg" alt="">
 
-            <h3>
-                Binta Set
-            </h3>
+            <h3>Binta Set</h3>
+            <p>€99.99</p>
 
-            <p>
-                €99.99
-            </p>
-
-            <button>
-                View Product
-            </button>
+            <button>Voir le produit</button>
 
         </article>
 
@@ -176,17 +180,10 @@
 
             <img src="images/product2.jpg" alt="">
 
-            <h3>
-                Sports Outfit
-            </h3>
+            <h3>Tenue Sport</h3>
+            <p>€99.99</p>
 
-            <p>
-                €99.99
-            </p>
-
-            <button>
-                View Product
-            </button>
+            <button>Voir le produit</button>
 
         </article>
 
@@ -194,17 +191,10 @@
 
             <img src="images/product3.jpg" alt="">
 
-            <h3>
-                Casual Set
-            </h3>
+            <h3>Look Casual</h3>
+            <p>€89.99</p>
 
-            <p>
-                €89.99
-            </p>
-
-            <button>
-                View Product
-            </button>
+            <button>Voir le produit</button>
 
         </article>
 
@@ -212,17 +202,10 @@
 
             <img src="images/product4.jpg" alt="">
 
-            <h3>
-                Summer Dress
-            </h3>
+            <h3>Robe d’été</h3>
+            <p>€109.99</p>
 
-            <p>
-                €109.99
-            </p>
-
-            <button>
-                View Product
-            </button>
+            <button>Voir le produit</button>
 
         </article>
 
@@ -230,17 +213,10 @@
 
             <img src="images/product5.jpg" alt="">
 
-            <h3>
-                Modern Look
-            </h3>
+            <h3>Look Moderne</h3>
+            <p>€119.99</p>
 
-            <p>
-                €119.99
-            </p>
-
-            <button>
-                View Product
-            </button>
+            <button>Voir le produit</button>
 
         </article>
 
@@ -248,17 +224,10 @@
 
             <img src="images/product6.jpg" alt="">
 
-            <h3>
-                Luxury Set
-            </h3>
+            <h3>Set Luxe</h3>
+            <p>€129.99</p>
 
-            <p>
-                €129.99
-            </p>
-
-            <button>
-                View Product
-            </button>
+            <button>Voir le produit</button>
 
         </article>
 
@@ -275,19 +244,19 @@
         <div class="lookbook-text">
 
             <span>
-                NEW SEASON
+                NOUVELLE SAISON
             </span>
 
             <h2>
-                Luxury Collection 2026
+                Collection Luxe 2026
             </h2>
 
             <p>
-                Timeless pieces designed to elevate your wardrobe.
+                Des pièces intemporelles pour sublimer votre garde-robe.
             </p>
 
             <a href="shop.html" class="btn btn-dark">
-                Discover
+                Découvrir
             </a>
 
         </div>
@@ -308,13 +277,8 @@
 
     <div class="gallery-header">
 
-        <h2>
-            Fashion Gallery
-        </h2>
-
-        <p>
-            Discover our latest looks.
-        </p>
+        <h2>Galerie Mode</h2>
+        <p>Découvrez nos derniers looks.</p>
 
     </div>
 
@@ -332,33 +296,31 @@
 <!-- TESTIMONIALS -->
 
 <section class="testimonials">
-    <h2>What Our Customers Say</h2>
+    <h2>Témoignages Clients</h2>
 
     <div class="testimonial">
         <p>★★★★★</p>
-        <p>Des vêtements élégants avec une qualité exceptionnelle. La livraison a été rapide et le service parfait.</p>
+        <p>Des créations raffinées et une qualité remarquable. Je suis ravie de mon achat.</p>
         <span>— Sarah M.</span>
     </div>
 
     <div class="testimonial">
         <p>★★★★★</p>
-        <p>J’ai adoré ma commande. Les finitions sont magnifiques et les pièces sont encore plus belles en vrai.</p>
+        <p>Une marque élégante avec un excellent service client. Je recommanderai sans hésiter.</p>
         <span>— Émilie R.</span>
     </div>
 
     <div class="testimonial">
         <p>★★★★★</p>
-        <p>Une expérience d’achat exceptionnelle. Livraison rapide et produits conformes aux photos.</p>
+        <p>Les détails sont magnifiques et les matières sont de très bonne qualité.</p>
         <span>— Camille D.</span>
     </div>
 
     <div class="testimonial">
         <p>★★★★★</p>
-        <p>Très satisfaite de mon achat. La qualité est au rendez-vous et le service client est excellent.</p>
+        <p>Une expérience d’achat exceptionnelle. Livraison rapide et produits conformes.</p>
         <span>— Sophie L.</span>
     </div>
-
-</section>
 
 </section>
 
@@ -366,9 +328,7 @@
 
 <section class="instagram">
 
-    <h2>
-        @INLAYAPARIS
-    </h2>
+    <h2>@INLAYAPARIS</h2>
 
     <div class="instagram-grid">
 
@@ -387,14 +347,12 @@
 
     <div class="about-box">
 
-        <h2>
-            About The Brand
-        </h2>
+        <h2>À propos de la marque</h2>
 
         <p>
-            For several years, we have carefully selected pieces
-            that combine trendiness and character, allowing every
-            woman to express her personality with elegance.
+            Depuis plusieurs années, nous sélectionnons avec soin des pièces
+            qui allient tendance et caractère afin de permettre à chaque femme
+            d’exprimer sa personnalité avec élégance.
         </p>
 
     </div>
@@ -405,18 +363,16 @@
 
 <section class="contact-section" id="contact">
 
-    <h2>
-        Contact Us
-    </h2>
+    <h2>Contactez-nous</h2>
 
     <p>
-        Have questions about a product?
-        Contact our team.
+        Une question sur un produit ? Contactez notre équipe.
     </p>
 
 </section>
 
-<!-- FOOTER -->
+<!-- SOCIAL ICONS -->
+
 <div class="social-icons">
 
   <a href="https://instagram.com/inlaya_paris?igsh=MWNzd2pnZnVuemdpNg==" target="_blank">
@@ -433,45 +389,30 @@
 
 </div>
 
+<!-- FOOTER -->
+
 <footer class="footer">
 
     <div>
 
-        <h3>
-            INLAYA PARIS
-        </h3>
-
-        <p>
-            Modern fashion for women.
-        </p>
+        <h3>INLAYA PARIS</h3>
+        <p>Mode moderne pour femme.</p>
 
     </div>
 
     <div>
 
-        <h3>
-            Links
-        </h3>
+        <h3>Liens</h3>
 
-        <a href="index.html">
-            Home
-        </a>
-
-        <a href="shop.html">
-            Shop
-        </a>
+        <a href="index.html">Accueil</a>
+        <a href="shop.html">Boutique</a>
 
     </div>
 
     <div>
 
-        <h3>
-            Customer Service
-        </h3>
-
-        <p>
-            Available 7 days a week
-        </p>
+        <h3>Service client</h3>
+        <p>Disponible 7j/7</p>
 
     </div>
 
@@ -481,5 +422,3 @@
 
 </body>
 </html>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">

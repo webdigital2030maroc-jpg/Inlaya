@@ -7,6 +7,7 @@
     --line:rgba(0,0,0,.08);
 }
 
+
 *{
     margin:0;
     padding:0;
@@ -470,22 +471,29 @@ img{
 .brand{
     display:flex;
     align-items:center;
+    justify-content:flex-start;
     gap:10px;
+    height:75px;
 }
 
-.brand-logo{
-    width:55px;
-    height:55px;
-    object-fit:contain;
-    filter: brightness(0);
-}
-
+/* reset ديال h1 باش مايبقاش يطلع ولا يهبط */
 .brand-title{
-    font-size:22px;
+    font-size:30px;
     font-weight:700;
     margin:0;
+    padding:0;
     line-height:1;
 }
+
+/* logo مضمون مايتشوهش */
+.brand-logo{
+    width:50px;
+    height:50px;
+    display:block;
+    object-fit:cover;
+    border-radius:50%;
+}
+
 
 .card img{
     width:100%;
@@ -621,12 +629,6 @@ img{
     margin:auto;
 }
 
-.brand-title{
-    font-size:42px;
-    margin-bottom:20px;
-    font-weight:700;
-    color:#111;
-}
 
 .brand-text{
     font-size:18px;

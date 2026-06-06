@@ -470,20 +470,21 @@ img{
 .brand{
     display:flex;
     align-items:center;
-    gap:12px;
+    gap:10px;
 }
 
 .brand-logo{
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    object-fit:cover;
+    width:55px;
+    height:55px;
+    object-fit:contain;
+    filter: brightness(0);
 }
 
 .brand-title{
     font-size:22px;
     font-weight:700;
-    letter-spacing:1px;
+    margin:0;
+    line-height:1;
 }
 
 .card img{

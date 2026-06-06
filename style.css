@@ -608,3 +608,43 @@ img{
     margin-bottom:12px;
     font-size:14px;
 }
+
+.brand-message{
+    padding:100px 20px;
+    background:#fff;
+    text-align:center;
+}
+
+.brand-message .container{
+    max-width:900px;
+    margin:auto;
+}
+
+.brand-title{
+    font-size:42px;
+    margin-bottom:20px;
+    font-weight:700;
+    color:#111;
+}
+
+.brand-text{
+    font-size:18px;
+    line-height:1.8;
+    color:#555;
+    margin-bottom:30px;
+}
+
+.brand-btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#111;
+    color:#fff;
+    border-radius:6px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.brand-btn:hover{
+    transform:translateY(-3px);
+    background:#000;
+}

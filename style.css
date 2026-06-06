@@ -581,3 +581,30 @@ img{
     height:18px;
     object-fit:cover;
 }
+
+.promo-bar {
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 0;
+}
+
+.promo-text {
+  display: inline-block;
+  animation: slideText 10s linear infinite;
+}
+
+@keyframes slideText {
+  from { transform: translateX(100%); }
+  to { transform: translateX(-100%); }
+}
+
+.footer p{
+    color:#bbb;
+    line-height:1.8;
+    margin-bottom:12px;
+    font-size:14px;
+}

@@ -1,222 +1,93 @@
-// ==========================
-// MOBILE MENU
-// ==========================
+// ================= CART SYSTEM =================
 
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+// ADD TO CART
+document.querySelectorAll(".product-card button").forEach(btn => {
+    btn.addEventListener("click", (e) => {
+
+        const card = e.target.closest(".product-card");
+
+        const name = card.querySelector("h3").innerText;
+        const price = card.querySelector("p").innerText;
+        const img = card.querySelector("img").src;
+
+        const product = {
+            name,
+            price,
+            img
+        };
+
+        cart.push(product);
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        alert("Added to cart ✔");
+    });
+});
+
+
+// OPEN CART (simple page simulation)
+function openCart(){
+
+    let total = 0;
+
+    let html = "<h2>Your Cart</h2>";
+
+    cart.forEach(item => {
+
+        html += `
+        <div style="display:flex;gap:10px;margin:10px 0;">
+            <img src="${item.img}" width="60">
+            <div>
+                <p>${item.name}</p>
+                <small>${item.price}</small>
+            </div>
+        </div>`;
+
+        total += parseFloat(item.price.replace("€",""));
+    });
+
+    html += `<h3>Total: €${total.toFixed(2)}</h3>`;
+
+    html += `<button onclick="checkout()">Checkout</button>`;
+
+    const win = window.open("");
+    win.document.write(html);
+}
+
+
+// CHECKOUT (future payment page)
+function checkout(){
+    alert("Payment system (Visa/Mastercard) will be added next 🔥");
+}
+
+
+// MOBILE MENU
 const menuBtn = document.getElementById("menuBtn");
 const mobileMenu = document.getElementById("mobileMenu");
 
-if(menuBtn && mobileMenu){
-
-    menuBtn.addEventListener("click", () => {
-
+if(menuBtn){
+    menuBtn.onclick = () => {
         mobileMenu.classList.toggle("open");
-
-    });
-
+    }
 }
 
 
-// ==========================
-// CLOSE MENU AFTER CLICK
-// ==========================
-
-document.querySelectorAll(".mobile-menu a").forEach(link => {
-
-    link.addEventListener("click", () => {
-
-        mobileMenu.classList.remove("open");
-
-    });
-
-});
-
-
-// ==========================
-// HEADER SHADOW ON SCROLL
-// ==========================
-
-const header = document.querySelector(".header");
+// SCROLL ANIMATION SIMPLE
+const elements = document.querySelectorAll(".card, .product-card, .lookbook-text");
 
 window.addEventListener("scroll", () => {
 
-    if(window.scrollY > 50){
+    elements.forEach(el => {
 
-        header.style.boxShadow =
-        "0 8px 20px rgba(0,0,0,.08)";
+        const top = el.getBoundingClientRect().top;
 
-    }else{
-
-        header.style.boxShadow = "none";
-
-    }
-
-});
-
-
-// ==========================
-// SCROLL REVEAL ANIMATION
-// ==========================
-
-const revealElements = document.querySelectorAll(
-
-    ".card, .testimonial, .about-box, .lookbook-text, .lookbook-image, .gallery-grid img, .instagram-grid img"
-
-);
-
-function revealOnScroll(){
-
-    revealElements.forEach((element)=>{
-
-        const top =
-        element.getBoundingClientRect().top;
-
-        const windowHeight =
-        window.innerHeight;
-
-        if(top < windowHeight - 100){
-
-            element.style.opacity = "1";
-
-            element.style.transform =
-            "translateY(0)";
-
-        }
-
-    });
-
-}
-
-revealElements.forEach((element)=>{
-
-    element.style.opacity = "0";
-
-    element.style.transform =
-    "translateY(40px)";
-
-    element.style.transition =
-    "all .8s ease";
-
-});
-
-window.addEventListener(
-    "scroll",
-    revealOnScroll
-);
-
-revealOnScroll();
-
-
-// ==========================
-// IMAGE HOVER EFFECT
-// ==========================
-
-document
-.querySelectorAll(
-".gallery-grid img, .instagram-grid img"
-)
-
-.forEach((image)=>{
-
-    image.addEventListener("mouseenter",()=>{
-
-        image.style.transform =
-        "scale(1.05)";
-
-    });
-
-    image.addEventListener("mouseleave",()=>{
-
-        image.style.transform =
-        "scale(1)";
-
-    });
-
-});
-
-
-// ==========================
-// PRODUCT BUTTON EFFECT
-// ==========================
-
-document
-.querySelectorAll(".card button")
-
-.forEach((button)=>{
-
-    button.addEventListener("click",()=>{
-
-        button.innerText =
-        "Selected";
-
-        button.style.background =
-        "#444";
-
-    });
-
-});
-
-
-// ==========================
-// SMOOTH SCROLL LINKS
-// ==========================
-
-document
-.querySelectorAll('a[href^="#"]')
-
-.forEach(anchor => {
-
-    anchor.addEventListener("click",
-
-    function(e){
-
-        e.preventDefault();
-
-        const target =
-        document.querySelector(
-
-        this.getAttribute("href")
-
-        );
-
-        if(target){
-
-            target.scrollIntoView({
-
-                behavior:"smooth"
-
-            });
-
+        if(top < window.innerHeight - 100){
+            el.style.opacity = "1";
+            el.style.transform = "translateY(0)";
         }
 
     });
 
 });
-
-
-// ==========================
-// SIMPLE LOADING EFFECT
-// ==========================
-
-window.addEventListener("load",()=>{
-
-    document.body.style.opacity = "1";
-
-});
-
-document.body.style.opacity = "0";
-
-document.body.style.transition =
-"opacity .7s ease";
-
-
-// ==========================
-// FUTURE CART SYSTEM PLACE
-// ==========================
-
-// Cart system
-// Stripe payment
-// Product page
-// Search
-// Filters
-
-// Later...

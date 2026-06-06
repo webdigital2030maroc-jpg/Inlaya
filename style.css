@@ -733,3 +733,36 @@ img{
 .social-icons a:hover{
     transform:scale(1.1);
 }
+
+.testimonials{
+    padding:80px 20px;
+    text-align:center;
+    background:#f9f9f9;
+}
+
+.testimonials h2{
+    margin-bottom:40px;
+    font-size:32px;
+}
+
+.testimonial{
+    max-width:700px;
+    margin:20px auto;
+    padding:20px;
+    background:white;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.testimonial p{
+    margin:10px 0;
+    font-size:16px;
+    color:#333;
+}
+
+.testimonial span{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+    color:#111;
+}

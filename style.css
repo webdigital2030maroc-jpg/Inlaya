@@ -654,36 +654,17 @@ img{
 
 @media(max-width:768px){
 
-    .header{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:0 10px;
-    }
-
-    .brand{
-        flex:1;
-        overflow:hidden;
-    }
-
     .brand-title{
-        font-size:14px;
-        white-space:nowrap;
+        font-size:12px !important;
     }
 
     .brand-logo{
-        width:32px;
-        height:32px;
+        width:28px !important;
+        height:28px !important;
     }
 
-    .menu-btn{
-        display:block;
-        font-size:28px;
-        margin-left:10px;
-    }
-
-    .cart-btn{
-        display:none;
+    .header{
+        padding:0 8px;
     }
 
 }

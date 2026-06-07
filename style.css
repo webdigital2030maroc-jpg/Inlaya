@@ -655,16 +655,7 @@ img{
 @media(max-width:768px){
 
     .brand-title{
-        font-size:12px !important;
-    }
-
-    .brand-logo{
-        width:28px !important;
-        height:28px !important;
-    }
-
-    .header{
-        padding:0 8px;
+        display:none;
     }
 
 }

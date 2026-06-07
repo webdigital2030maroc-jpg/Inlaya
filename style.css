@@ -651,3 +651,24 @@ img{
     transform:translateY(-3px);
     background:#000;
 }
+
+@media(max-width:768px){
+
+    .brand-logo{
+        width:35px;
+        height:35px;
+    }
+
+    .brand-title{
+        font-size:16px;
+    }
+
+    .header{
+        padding:0 10px;
+    }
+
+    .cart-btn{
+        display:none;
+    }
+
+}

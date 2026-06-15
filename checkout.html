@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout</title>
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1 style="text-align:center;margin-top:50px;">
-Checkout Page (Coming Soon 🚀)
-</h1>
+<header class="header">
+  <div class="logo">Checkout</div>
 
-<p style="text-align:center;">
-Visa / Mastercard payment system will be added here
-</p>
+  <nav class="nav">
+    <a href="product.html">Shop</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="section">
+
+  <div class="section-head">
+    <h2>Payment</h2>
+  </div>
+
+  <div class="about-box">
+
+    <form>
+      <p>Name</p>
+      <input type="text" style="width:100%;padding:10px;margin-bottom:10px;">
+
+      <p>Email</p>
+      <input type="email" style="width:100%;padding:10px;margin-bottom:10px;">
+
+      <p>Payment Method</p>
+      <select style="width:100%;padding:10px;margin-bottom:20px;">
+        <option>Visa</option>
+        <option>Mastercard</option>
+        <option>Stripe</option>
+      </select>
+
+      <button class="btn btn-dark">Pay Now</button>
+    </form>
+
+  </div>
+
+</section>
 
 </body>
-</html> 
+</html>

@@ -91,3 +91,45 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+function addToCart(name, price) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push({ name, price });
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Added to cart");
+}
+
+function removeItem(index) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.splice(index, 1);
+  localStorage.setItem("cart", JSON.stringify(cart));
+  loadCart();
+}
+
+function loadCart() {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  let container = document.getElementById("cart-items");
+
+  let total = 0;
+  container.innerHTML = "";
+
+  cart.forEach((item, index) => {
+    total += item.price;
+
+    container.innerHTML += `
+      <div class="card">
+        <img src="https://via.placeholder.com/600x800">
+        <p>${item.name}</p>
+        <h3>${item.price}$</h3>
+        <button onclick="removeItem(${index})">Remove ❌</button>
+      </div>
+    `;
+  });
+
+  document.getElementById("total").innerText = "Total: " + total + "$";
+}
+
+if (document.getElementById("cart-items")) {
+  loadCart();
+}

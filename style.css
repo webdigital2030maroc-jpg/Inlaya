@@ -333,6 +333,7 @@ img{
     transform:scale(1.05);
 }
 
+
 /* TESTIMONIALS */
 .testimonials{
     padding:80px 20px;
@@ -353,31 +354,6 @@ img{
     color:#f5a623;
 }
 
-/* INSTAGRAM */
-.instagram{
-    padding:100px 20px;
-    text-align:center;
-}
-
-.instagram-grid{
-    max-width:1300px;
-    margin:auto;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
-}
-
-.instagram-grid img{
-    height:320px;
-    object-fit:cover;
-    border-radius:12px;
-    transition:0.4s;
-}
-
-.instagram-grid img:hover{
-    transform:scale(1.05);
-}
-
 /* ABOUT */
 .about-box{
     background:white;
@@ -391,21 +367,29 @@ img{
     text-align:center;
 }
 
-/* FOOTER */
 .footer{
     background:#000;
-    color:white;
+    color:#fff;
     padding:60px 20px;
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:30px;
 }
 
-.footer a,
-.footer p{
+.footer h3{
+    margin-bottom:15px;
+    font-size:16px;
+    color:#fff;
+}
+
+.footer p,
+.footer a{
     color:#bbb;
-    margin-bottom:10px;
+    font-size:14px;
+    line-height:1.7;
+    text-decoration:none;
     display:block;
+    margin-bottom:8px;
 }
 
 /* SOCIAL ICONS (FINAL CLEAN) */
@@ -566,15 +550,6 @@ img{
     margin-bottom:15px;
 }
 
-.footer{
-    background:#000;
-    color:#fff;
-    padding:60px 20px;
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:30px;
-}
-
 .copyright{
     display:flex;
     justify-content:center;
@@ -652,3 +627,42 @@ img{
     background:#000;
 }
 
+.lookbook-content{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.lookbook-text{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.lookbook-text span{
+    margin-bottom:15px;
+}
+
+.lookbook-text h2{
+    margin-bottom:20px;
+}
+
+.lookbook-text p{
+    margin-bottom:25px;
+    line-height:1.8;
+}
+
+.lookbook-text .btn{
+    display:inline-block;
+}
+
+.product-btn{
+    display:block;
+    margin:15px 18px 20px;
+    text-align:center;
+    padding:12px;
+    background:#111;
+    color:white;
+    border-radius:10px;
+}

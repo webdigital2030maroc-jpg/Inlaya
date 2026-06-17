@@ -22,10 +22,18 @@
 
 <section class="product-page">
 
-    <div class="product-image">
-        <img src="images/product-1.jpeg" alt="Produit">
+    <!-- 🔥 SLIDER -->
+    <div class="slider" data-slider>
+
+        <img src="images/product-1.jpeg" class="active" alt="Produit 1">
+        <img src="images/product-1b.jpeg" alt="Produit 1 view 2">
+
+        <button class="prev">◀</button>
+        <button class="next">▶</button>
+
     </div>
 
+    <!-- INFO -->
     <div class="product-info">
 
         <h1>Produit 1</h1>
@@ -48,23 +56,22 @@
         <h3>Quantité</h3>
 
         <div class="quantity-box">
-            <button>-</button>
-            <span>1</span>
-            <button>+</button>
+            <button onclick="changeQty(-1)">-</button>
+            <span id="qty">1</span>
+            <button onclick="changeQty(1)">+</button>
         </div>
 
         <br>
 
         <button class="btn btn-dark" onclick="addToCart('Produit 1', 99.99)">
             AJOUTER AU PANIER
-        </a>
+        </button>
 
     </div>
 
 </section>
 
-</body>
-
 <script src="script.js"></script>
 
+</body>
 </html>

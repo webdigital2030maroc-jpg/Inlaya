@@ -94,10 +94,18 @@ window.addEventListener("scroll", () => {
 
 
 function addToCart(name, price) {
+
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
-  cart.push({ name, price });
+
+  cart.push({
+      name: name,
+      price: price,
+      img: "images/product-1.jpeg"
+  });
+
   localStorage.setItem("cart", JSON.stringify(cart));
-  alert("Added to cart");
+
+  window.location.href = "cart.html";
 }
 
 function removeItem(index) {
@@ -119,7 +127,7 @@ function loadCart() {
 
     container.innerHTML += `
       <div class="card">
-        <img src="https://via.placeholder.com/600x800">
+        <img src="${item.img}">
         <p>${item.name}</p>
         <h3>${item.price}$</h3>
         <button onclick="removeItem(${index})">Remove ❌</button>
@@ -132,4 +140,52 @@ function loadCart() {
 
 if (document.getElementById("cart-items")) {
   loadCart();
+}
+
+
+
+const sliders = document.querySelectorAll('.product-slider');
+
+sliders.forEach(slider => {
+  let images = slider.querySelectorAll('img');
+  let index = 0;
+
+  slider.querySelector('.next').addEventListener('click', () => {
+    images[index].classList.remove('active');
+    index = (index + 1) % images.length;
+    images[index].classList.add('active');
+  });
+
+  slider.querySelector('.prev').addEventListener('click', () => {
+    images[index].classList.remove('active');
+    index = (index - 1 + images.length) % images.length;
+    images[index].classList.add('active');
+  });
+});
+
+
+
+
+// PRODUCT QUANTITY
+
+const minusBtn = document.querySelector(".quantity-box button:first-child");
+const plusBtn = document.querySelector(".quantity-box button:last-child");
+const quantityText = document.querySelector(".quantity-box span");
+
+let quantity = 1;
+
+if (minusBtn && plusBtn && quantityText) {
+
+    plusBtn.addEventListener("click", () => {
+        quantity++;
+        quantityText.innerText = quantity;
+    });
+
+    minusBtn.addEventListener("click", () => {
+        if (quantity > 1) {
+            quantity--;
+            quantityText.innerText = quantity;
+        }
+    });
+
 }

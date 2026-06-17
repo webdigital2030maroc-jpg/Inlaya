@@ -1,37 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cart</title>
+
+<title>Panier | INLAYA PARIS</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header class="header">
-  <div class="logo">Cart</div>
+<div class="topbar">
+    <p>Livraison gratuite pour toute commande supérieure à 100€</p>
+</div>
 
-  <nav class="nav">
-    <a href="product.html">Shop</a>
-    <a href="checkout.html">Checkout</a>
-  </nav>
+<header class="header">
+
+    <div class="brand">
+
+        <img src="images/Inlaya-paris.png" alt="Logo" class="brand-logo">
+
+        <h1 class="brand-title">INLAYA PARIS</h1>
+
+    </div>
+
+    <nav class="nav">
+        <a href="index.html">Accueil</a>
+        <a href="product.html">Produit</a>
+        <a href="cart.html" class="active">Panier 🛒</a>
+    </nav>
+
 </header>
 
 <section class="section">
 
-  <div class="section-head">
-    <h2>Your Cart</h2>
-  </div>
+    <div class="section-head">
 
-  <div id="cart-items"></div>
+        <h2>Mon Panier</h2>
 
-  <h2 id="total"></h2>
+    </div>
 
-  <a href="checkout.html" class="btn btn-dark">Go Checkout</a>
+    <div id="cart-items"></div>
+
+    <div class="cart-total-box">
+
+        <h3 id="total">Total : 0€</h3>
+
+    </div>
+
+    <div class="cart-actions">
+
+        <a href="index.html" class="btn btn-light">
+            Continuer mes achats
+        </a>
+
+        <a href="checkout.html" class="btn btn-dark">
+            Passer à la commande
+        </a>
+
+    </div>
 
 </section>
 
 <script src="script.js"></script>
+
 </body>
 </html>

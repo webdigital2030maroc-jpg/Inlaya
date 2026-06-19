@@ -22,49 +22,60 @@
 
 <section class="product-page">
 
-    <!-- 🔥 SLIDER -->
+    <!-- SLIDER -->
+
     <div class="slider" data-slider>
 
-        <img src="images/product-1.jpeg" class="active" alt="Produit 1">
-        <img src="images/product-1b.jpeg" alt="Produit 1 view 2">
+        <img id="img1" class="active">
+        <img id="img2">
 
         <button class="prev">◀</button>
         <button class="next">▶</button>
 
     </div>
 
+
     <!-- INFO -->
+
     <div class="product-info">
 
-        <h1>Produit 1</h1>
+        <h1 id="product-name"></h1>
 
-        <p class="price">99.99 €</p>
+        <p class="price" id="product-price"></p>
 
-        <p class="description">
-            Produit élégant conçu pour offrir confort et style au quotidien.
-        </p>
+        <p class="description" id="product-description"></p>
 
         <h3>Taille</h3>
 
         <select>
+
             <option>S</option>
             <option>M</option>
             <option>L</option>
             <option>XL</option>
+
         </select>
+
 
         <h3>Quantité</h3>
 
         <div class="quantity-box">
+
             <button onclick="changeQty(-1)">-</button>
+
             <span id="qty">1</span>
+
             <button onclick="changeQty(1)">+</button>
+
         </div>
 
         <br>
 
-        <button class="btn btn-dark" onclick="addToCart('Produit 1', 99.99)">
+
+        <button id="cartBtn" class="btn btn-dark">
+
             AJOUTER AU PANIER
+
         </button>
 
     </div>

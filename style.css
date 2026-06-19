@@ -183,15 +183,15 @@ img{
     color:white;
 }
 
-.btn-light{
-    background:white;
+.btn-beige{
+    background:#d4b996;
     color:#111;
 }
 
-.btn:hover{
-    transform:translateY(-3px);
-    opacity:0.9;
+.btn-beige:hover{
+    background:#c7a97f;
 }
+
 
 /* FEATURED */
 .featured{
@@ -299,7 +299,7 @@ img{
 }
 
 .lookbook-image img{
-    height:700px;
+    height:500px; 
     object-fit:cover;
     border-radius:20px;
 }

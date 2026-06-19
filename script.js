@@ -143,3 +143,121 @@ window.addEventListener("scroll", () => {
     });
 
 });
+
+
+const products = {
+
+1:{
+name:"Produit 1",
+price:120.99,
+description:"Produit élégant conçu pour offrir confort et style.",
+img1:"images/product-1.jpeg",
+img2:"images/product-1b.jpeg"
+},
+
+2:{
+name:"Produit 2",
+price:89.99,
+description:"Collection moderne pour femme.",
+img1:"images/product-2.jpeg",
+img2:"images/product-2b.jpeg"
+},
+
+3:{
+name:"Produit 3",
+price:79.99,
+description:"Tenue légère et raffinée.",
+img1:"images/product-3.jpeg",
+img2:"images/product-3b.jpeg"
+},
+
+4:{
+name:"Produit 4",
+price:109.99,
+description:"Description produit 4",
+img1:"images/product-4.jpeg",
+img2:"images/product-4b.jpeg"
+},
+
+5:{
+name:"Produit 5",
+price:119.99,
+description:"Description produit 5",
+img1:"images/product-5.jpeg",
+img2:"images/product-5b.jpeg"
+},
+
+6:{
+name:"Produit 6",
+price:129.99,
+description:"Description produit 6",
+img1:"images/product-6.jpeg",
+img2:"images/product-6b.jpeg"
+},
+
+7:{
+name:"Produit 7",
+price:139.99,
+description:"Description produit 7",
+img1:"images/product-7.jpeg",
+img2:"images/product-7b.jpeg"
+},
+
+8:{
+name:"Produit 8",
+price:149.99,
+description:"Description produit 8",
+img1:"images/product-8.jpeg",
+img2:"images/product-8b.jpeg"
+}
+
+};
+
+
+
+const params = new URLSearchParams(window.location.search);
+
+const id = params.get("id");
+
+
+
+if(id && products[id]){
+
+const p = products[id];
+
+document.getElementById("product-name").innerText =
+p.name;
+
+
+document.getElementById("product-price").innerText =
+p.price + " €";
+
+
+document.getElementById("product-description").innerText =
+p.description;
+
+
+document.getElementById("img1").src =
+p.img1;
+
+
+document.getElementById("img2").src =
+p.img2;
+
+
+
+document.getElementById("cartBtn").onclick = () => {
+
+addToCart(
+
+p.name,
+
+p.price,
+
+p.img1
+
+);
+
+};
+
+}

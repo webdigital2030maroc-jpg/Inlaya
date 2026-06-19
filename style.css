@@ -909,3 +909,43 @@ img{
     padding: 5px 10px;
     cursor: pointer;
 }
+
+
+.about-box input,
+.about-box select{
+
+width:100%;
+padding:15px;
+
+margin-top:8px;
+margin-bottom:20px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+background:white;
+
+}
+
+
+.about-box button{
+
+margin-top:15px;
+
+}
+
+
+.cart-actions{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+margin-top:40px;
+
+}

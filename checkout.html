@@ -1,50 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Checkout</title>
+
+<title>Commande | INLAYA PARIS</title>
+
 <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
-<header class="header">
-  <div class="logo">Checkout</div>
 
-  <nav class="nav">
-    <a href="product.html">Shop</a>
-    <a href="cart.html">Cart</a>
-  </nav>
+<div class="topbar">
+
+<p>
+
+Livraison gratuite pour toute commande supérieure à 100€
+
+</p>
+
+</div>
+
+
+
+<header class="header">
+
+<div class="brand">
+
+<img src="images/Inlaya-paris.png" class="brand-logo">
+
+<h1 class="brand-title">
+
+INLAYA PARIS
+
+</h1>
+
+</div>
+
+
+
+<button class="menu-btn" id="menuBtn">
+
+☰
+
+</button>
+
+
+
+<nav class="nav">
+
+<a href="index.html">
+
+Accueil
+
+</a>
+
+
+<a href="cart.html">
+
+Panier 🛒
+
+</a>
+
+
+<a href="checkout.html" class="active">
+
+Commande
+
+</a>
+
+</nav>
+
 </header>
+
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="index.html">
+
+Accueil
+
+</a>
+
+
+<a href="cart.html">
+
+Panier 🛒
+
+</a>
+
+</div>
+
+
 
 <section class="section">
 
-  <div class="section-head">
-    <h2>Payment</h2>
-  </div>
+<div class="section-head">
 
-  <div class="about-box">
+<h2>
 
-    <form>
-      <p>Name</p>
-      <input type="text" style="width:100%;padding:10px;margin-bottom:10px;">
+Paiement
 
-      <p>Email</p>
-      <input type="email" style="width:100%;padding:10px;margin-bottom:10px;">
+</h2>
 
-      <p>Payment Method</p>
-      <select style="width:100%;padding:10px;margin-bottom:20px;">
-        <option>Visa</option>
-        <option>Mastercard</option>
-      </select>
+</div>
 
-      <button class="btn btn-dark">Pay Now</button>
-    </form>
 
-  </div>
+
+<div class="about-box">
+
+
+<form>
+
+
+<p>Nom complet</p>
+
+<input type="text">
+
+
+
+<p>Email</p>
+
+<input type="email">
+
+
+
+<p>Méthode de paiement</p>
+
+<select>
+
+<option>Visa</option>
+
+<option>Mastercard</option>
+
+</select>
+
+
+
+<button class="btn btn-dark">
+
+Payer maintenant
+
+</button>
+
+
+</form>
+
+</div>
 
 </section>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

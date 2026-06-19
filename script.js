@@ -225,6 +225,9 @@ if(id && products[id]){
 
 const p = products[id];
 
+console.log(id);
+console.log(products[id]);
+
 document.getElementById("product-name").innerText =
 p.name;
 
@@ -237,12 +240,12 @@ document.getElementById("product-description").innerText =
 p.description;
 
 
-document.getElementById("img1").src =
-p.img1;
+document.getElementById("img1").src = p.img1;
 
 
-document.getElementById("img2").src =
-p.img2;
+
+document.getElementById("img2").src = p.img2;
+
 
 
 

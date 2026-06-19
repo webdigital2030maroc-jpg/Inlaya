@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,56 +15,112 @@
 <body>
 
 <div class="topbar">
-    <p>Livraison gratuite pour toute commande supérieure à 100€</p>
+<p>Livraison gratuite pour toute commande supérieure à 100€</p>
 </div>
+
 
 <header class="header">
 
-    <div class="brand">
+<div class="brand">
 
-        <img src="images/Inlaya-paris.png" alt="Logo" class="brand-logo">
+<img src="images/Inlaya-paris.png" class="brand-logo">
 
-        <h1 class="brand-title">INLAYA PARIS</h1>
+<h1 class="brand-title">
+INLAYA PARIS
+</h1>
 
-    </div>
+</div>
 
-    <nav class="nav">
-        <a href="index.html">Accueil</a>
-        <a href="product.html">Produit</a>
-        <a href="cart.html" class="active">Panier 🛒</a>
-    </nav>
+
+<button class="menu-btn" id="menuBtn">
+☰
+</button>
+
+
+<nav class="nav">
+
+<a href="index.html">
+Accueil
+</a>
+
+<a href="product.html">
+Produit
+</a>
+
+<a href="cart.html" class="active">
+Panier 🛒
+</a>
+
+</nav>
 
 </header>
 
+
+
+<div class="mobile-menu" id="mobileMenu">
+
+<a href="index.html">
+Accueil
+</a>
+
+<a href="product.html">
+Produit
+</a>
+
+<a href="cart.html">
+Panier 🛒
+</a>
+
+</div>
+
+
+
 <section class="section">
 
-    <div class="section-head">
+<div class="section-head">
 
-        <h2>Mon Panier</h2>
+<h2>
+Mon Panier
+</h2>
 
-    </div>
+</div>
 
-    <div id="cart-items"></div>
 
-    <div class="cart-total-box">
+<div id="cart-items"></div>
 
-        <h3 id="total">Total : 0€</h3>
 
-    </div>
+<div class="cart-total-box">
 
-    <div class="cart-actions">
+<h3 id="total">
 
-        <a href="index.html#products" class="btn btn-beige">
-         Continuer mes achats
-        </a>
+Total : 0 €
 
-        <a href="checkout.html" class="btn btn-dark">
-            Passer à la commande
-        </a>
+</h3>
 
-    </div>
+</div>
+
+
+
+<div class="cart-actions">
+
+<a href="index.html#products" class="btn btn-beige">
+
+Continuer mes achats
+
+</a>
+
+
+
+<a href="checkout.html" class="btn btn-dark">
+
+Passer à la commande
+
+</a>
+
+</div>
 
 </section>
+
 
 <script src="script.js"></script>
 

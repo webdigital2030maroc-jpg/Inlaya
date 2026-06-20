@@ -264,3 +264,103 @@ p.img1
 };
 
 }
+
+
+
+
+function loadCheckout(){
+
+const items=document.getElementById("checkout-items");
+
+if(!items) return;
+
+let total=0;
+
+cart.forEach(product=>{
+
+items.innerHTML+=`
+
+<p>
+
+${product.name}
+
+x${product.qty}
+
+-
+
+${product.price*product.qty} €
+
+</p>
+
+`;
+
+total+=product.price*product.qty;
+
+});
+
+document.getElementById("checkout-total").innerText=
+
+"Total : "+total.toFixed(2)+" €";
+
+}
+
+
+loadCheckout();
+
+
+
+function sendWhatsApp(){
+
+
+const prenom=document.getElementById("prenom").value;
+
+const nom=document.getElementById("nom").value;
+
+const telephone=document.getElementById("telephone").value;
+
+const adresse=document.getElementById("adresse").value;
+
+
+let text=
+
+"Nouvelle commande%0A%0A";
+
+
+text+=
+
+"Nom : "+prenom+" "+nom+"%0A";
+
+
+text+=
+
+"Téléphone : "+telephone+"%0A";
+
+
+text+=
+
+"Adresse : "+adresse+"%0A%0A";
+
+
+cart.forEach(item=>{
+
+
+text+=
+
+item.name+
+
+" x"+item.qty+
+
+"%0A";
+
+
+});
+
+
+window.open(
+
+"https://wa.me/212762730446?text="+text
+
+);
+
+
+}

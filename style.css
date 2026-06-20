@@ -949,3 +949,56 @@ flex-wrap:wrap;
 margin-top:40px;
 
 }
+
+
+
+
+.checkout-box{
+
+background:white;
+
+padding:40px;
+
+border-radius:20px;
+
+max-width:800px;
+
+margin:auto;
+
+}
+
+
+.checkout-box input,
+.checkout-box select,
+.checkout-box textarea{
+
+width:100%;
+
+padding:15px;
+
+margin-top:10px;
+
+margin-bottom:20px;
+
+border:1px solid #ddd;
+
+border-radius:8px;
+
+font-size:16px;
+
+}
+
+
+.resume{
+
+padding:20px;
+
+background:#f8f5ef;
+
+border-radius:10px;
+
+margin-top:30px;
+
+margin-bottom:30px;
+
+}

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Commande | INLAYA PARIS</title>
+<title>Checkout | INLAYA PARIS</title>
 
 <link rel="stylesheet" href="style.css">
 
@@ -16,15 +16,8 @@
 
 
 <div class="topbar">
-
-<p>
-
-Livraison gratuite pour toute commande supérieure à 100€
-
-</p>
-
+<p>Livraison gratuite pour toute commande supérieure à 100€</p>
 </div>
-
 
 
 <header class="header">
@@ -34,36 +27,25 @@ Livraison gratuite pour toute commande supérieure à 100€
 <img src="images/Inlaya-paris.png" class="brand-logo">
 
 <h1 class="brand-title">
-
 INLAYA PARIS
-
 </h1>
 
 </div>
 
 
-
 <button class="menu-btn" id="menuBtn">
-
 ☰
-
 </button>
-
 
 
 <nav class="nav">
 
 <a href="index.html">
-
 Accueil
-
 </a>
 
-
 <a href="cart.html">
-
 Panier 🛒
-
 </a>
 
 </nav>
@@ -75,16 +57,11 @@ Panier 🛒
 <div class="mobile-menu" id="mobileMenu">
 
 <a href="index.html">
-
 Accueil
-
 </a>
 
-
 <a href="cart.html">
-
 Panier 🛒
-
 </a>
 
 </div>
@@ -104,45 +81,111 @@ Paiement
 </div>
 
 
-
-<div class="about-box">
-
-
-<form>
+<div class="checkout-box">
 
 
-<p>Nom complet</p>
+<h3>Informations personnelles</h3>
 
-<input type="text">
+<input id="prenom" placeholder="Prénom">
 
+<input id="nom" placeholder="Nom">
 
+<input id="telephone" placeholder="Téléphone">
 
-<p>Email</p>
-
-<input type="email">
+<input id="email" placeholder="Email">
 
 
 
-<p>Méthode de paiement</p>
+<h3>Adresse de livraison</h3>
 
-<select>
+<input id="adresse" placeholder="Adresse">
 
-<option>Visa</option>
+<input id="ville" placeholder="Ville">
 
-<option>Mastercard</option>
+
+<select id="pays">
+
+<option value="France">🇫🇷 France</option>
+<option value="Belgique">🇧🇪 Belgique</option>
+<option value="Suisse">🇨🇭 Suisse</option>
+<option value="Luxembourg">🇱🇺 Luxembourg</option>
+
+<option value="Espagne">🇪🇸 Espagne</option>
+<option value="Portugal">🇵🇹 Portugal</option>
+<option value="Italie">🇮🇹 Italie</option>
+<option value="Allemagne">🇩🇪 Allemagne</option>
+<option value="Pays-Bas">🇳🇱 Pays-Bas</option>
+
+<option value="Autriche">🇦🇹 Autriche</option>
+<option value="Irlande">🇮🇪 Irlande</option>
+<option value="Danemark">🇩🇰 Danemark</option>
+<option value="Suède">🇸🇪 Suède</option>
+<option value="Norvège">🇳🇴 Norvège</option>
+<option value="Finlande">🇫🇮 Finlande</option>
+<option value="Pologne">🇵🇱 Pologne</option>
+
+<option value="Royaume-Uni">🇬🇧 Royaume-Uni</option>
+
+<option value="États-Unis">🇺🇸 États-Unis</option>
+<option value="Canada">🇨🇦 Canada</option>
+
+<option value="Maroc">🇲🇦 Maroc</option>
+<option value="Algérie">🇩🇿 Algérie</option>
+<option value="Tunisie">🇹🇳 Tunisie</option>
+<option value="Palestine">🇵🇸 Palestine</option>
+
+<option value="Arabie saoudite">🇸🇦 Arabie saoudite</option>
+<option value="Émirats arabes unis">🇦🇪 Émirats arabes unis</option>
+<option value="Qatar">🇶🇦 Qatar</option>
+<option value="Koweït">🇰🇼 Koweït</option>
+<option value="Bahreïn">🇧🇭 Bahreïn</option>
+<option value="Oman">🇴🇲 Oman</option>
 
 </select>
 
 
 
-<button class="btn btn-dark">
+<textarea id="note"
 
-Payer maintenant
+placeholder="Instructions de livraison">
+
+</textarea>
+
+
+
+<div class="resume">
+
+<h3>
+
+Votre commande
+
+</h3>
+
+
+<div id="checkout-items">
+
+</div>
+
+
+<h4 id="checkout-total">
+
+Total : 0 €
+
+</h4>
+
+
+</div>
+
+
+
+<button class="btn btn-dark"
+
+onclick="sendWhatsApp()">
+
+Confirmer ma commande
 
 </button>
 
-
-</form>
 
 </div>
 
@@ -152,4 +195,5 @@ Payer maintenant
 <script src="script.js"></script>
 
 </body>
+
 </html>

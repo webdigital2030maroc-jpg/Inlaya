@@ -311,56 +311,60 @@ loadCheckout();
 
 function sendWhatsApp(){
 
+const prenom = document.getElementById("prenom").value;
 
-const prenom=document.getElementById("prenom").value;
+const nom = document.getElementById("nom").value;
 
-const nom=document.getElementById("nom").value;
+const telephone = document.getElementById("telephone").value;
 
-const telephone=document.getElementById("telephone").value;
+const email = document.getElementById("email").value;
 
-const adresse=document.getElementById("adresse").value;
+const adresse = document.getElementById("adresse").value;
 
+const ville = document.getElementById("ville").value;
 
-let text=
+const pays = document.getElementById("pays").value;
 
-"Nouvelle commande%0A%0A";
-
-
-text+=
-
-"Nom : "+prenom+" "+nom+"%0A";
+const instructions = document.getElementById("instructions").value;
 
 
-text+=
 
-"Téléphone : "+telephone+"%0A";
+let text = "🛍️ Nouvelle commande%0A%0A";
 
 
-text+=
+text += "👤 Nom : " + prenom + " " + nom + "%0A";
 
-"Adresse : "+adresse+"%0A%0A";
+text += "📞 Téléphone : " + telephone + "%0A";
+
+text += "📧 Email : " + email + "%0A";
+
+text += "🏙️ Ville : " + ville + "%0A";
+
+text += "🌍 Pays : " + pays + "%0A";
+
+text += "📍 Adresse : " + adresse + "%0A";
+
+text += "📝 Instructions : " + instructions + "%0A%0A";
+
+
+text += "━━━━━━━━━━%0A";
+text += "Produits%0A";
+text += "━━━━━━━━━━%0A";
 
 
 cart.forEach(item=>{
 
-
-text+=
-
-item.name+
-
-" x"+item.qty+
-
-"%0A";
-
+text += item.name +
+" x" + item.qty +
+" - " + (item.price * item.qty).toFixed(2) +
+" €%0A";
 
 });
 
 
 window.open(
-
-"https://wa.me/212656658700?text="+text
-
+"https://wa.me/212656658700?text=" + text,
+"_blank"
 );
-
 
 }

@@ -358,7 +358,7 @@ item.name+
 
 window.open(
 
-"https://wa.me/212762730446?text="+text
+"https://wa.me/212656658700?text="+text
 
 );
 
